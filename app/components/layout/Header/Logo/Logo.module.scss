@@ -1,0 +1,66 @@
+@import "../../../../assets/styles/colors";
+@import "../../../../assets/styles/mixins";
+
+.logo {
+  max-width: 314px;
+  height: 100%;
+  border-left: 1px solid $grey-divider;
+  border-right: 1px solid $grey-divider;
+  flex: 0 0 37.5%;
+  position: relative;
+  @media screen and (max-width: 991px){
+    max-width: 270px;
+    flex: 0 0 30%;
+  }
+  @media screen and (max-width: 576px){
+    max-width: 230px;
+    flex: 0 0 30%;
+  }
+  .angle {
+    &_leftTop {
+      @include square;
+      top: -1px;
+      left: -1px;
+      border-left: 1px solid #fff;
+      border-top: 1px solid #fff;
+    }
+    &_rightTop {
+      @include square;
+      top: -1px;
+      right: -1px;
+      border-right: 1px solid #fff;
+      border-top: 1px solid #fff;
+    }
+    &_leftBottom {
+      @include square;
+      bottom: -1px;
+      left: -1px;
+      border-bottom: 1px solid #fff;
+      border-left: 1px solid #fff;
+    }
+    &_rightBottom {
+      @include square;
+      bottom: -1px;
+      right: -1px;
+      border-right: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+    }
+  }
+  .link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 25px;
+    > span {
+      top: -8px;
+      @media screen and (max-width: 991px){
+        width: 230px !important;
+      }
+    }
+    .image {
+      @media screen and (max-width: 991px){
+          //width: 230px !important;
+      }
+    }
+  }
+}

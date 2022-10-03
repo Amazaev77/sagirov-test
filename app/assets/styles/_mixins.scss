@@ -1,0 +1,13 @@
+@mixin square() {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+}
+
+@mixin card-gradient($deg, $from, $to) {
+  background: linear-gradient($deg, rgba(255,255,255,$from) 48%, rgba(255,255,255,$to) 100%);
+}
+//#52565c
+@mixin card-border-gradient($deg) {
+  background: linear-gradient($deg, rgba(255,255,255,0) 25%, rgba(82,86,92,1) 100%);
+}

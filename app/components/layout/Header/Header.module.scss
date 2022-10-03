@@ -1,0 +1,23 @@
+.header {
+  height: 100px;
+  border-bottom: 1px solid rgba(152, 147, 147, 0.21);
+  border-top: 1px solid rgba(152, 147, 147, 0.21);
+  background-color: rgba(4, 2, 0, 0.21);
+  @media screen and (max-width: 991px){
+    height: 80px;
+  }
+  @media screen and (max-width: 576px){
+    height: 56px;
+  }
+  .headerContent {
+    margin: auto;
+    max-width: 1170px;
+    height: 100% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width: 1215px){
+      padding: 0 20px;
+    }
+  }
+}

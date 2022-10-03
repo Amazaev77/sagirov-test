@@ -1,0 +1,22 @@
+.wrap {
+  display: flex;
+  justify-content: flex-end;
+  @media screen and (max-width: 991px){
+    justify-content: flex-start;
+  }
+  .cards {
+    max-width: 380px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 10px;
+    transform: translateX(34px);
+    @media screen and (max-width: 991px){
+      max-width: 330px;
+      margin: 0;
+    }
+    @media screen and (max-width: 576px){
+      max-width: 160px;
+    }
+  }
+}
